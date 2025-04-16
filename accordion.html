@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accordion Example</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: grey;
+    }
+
+    .Qusetion {
+      text-align: center;
+      color: brown;
+      font-size: 55px;
+      font-family: "poppins";
+      font-weight: bold;
+      margin-bottom: 40PX;
+    }
+
+    h1 {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .accordion {
+      background-color: white;
+      color: #444;
+      cursor: pointer;
+      font-size: 20px;
+      padding: 29px 18px;
+      width: 73%;
+      text-align: left;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      transition: 0.4s;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      position: relative;
+      margin-top: 50px;
+    }
+
+    .accordion span {
+      position: absolute;
+      right: 20px;
+      font-size: 35px;
+    }
+
+    .accordion.active,
+    .accordion:hover {
+      background-color: #ccc;
+    }
+
+    .panel {
+      padding: 0 18px;
+      background-color: black;
+      display: none;
+      overflow: hidden;
+      font-size: 17px;
+      font-family: "poppins";
+      color: white;
+      width: 70%;
+    }
+
+    .accordion:nth-of-type(3) {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="Qusetion"><i>General Qusetion</i></h1>
+  <button class="accordion">Do You Accept All Major Credit Cards? <span>+</span></button>
+  <div class="panel">
+    <p>Lorem ipsum dolornedk sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.Lorem ipsum
+      dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+  </div>
+
+  <button class="accordion">Do You Support local Farmers? <span>+</span></button>
+  <div class="panel">
+    <p>Lorem ipsum dolor23o sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.Lorem ipsum
+      dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+  </div>
+
+  <button class="accordion">Do You Use Organic Ingerdients? <span>+</span></button>
+  <div class="panel">
+    <p>Lorem ipsum dolorfh sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.Lorem ipsum
+      dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+  </div>
+  <script src="accordion.js"></script>
+</body>
+
+</html>
